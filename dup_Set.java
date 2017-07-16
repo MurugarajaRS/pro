@@ -9,6 +9,8 @@ class dup_Set
         HashSet<String> set = new HashSet<String>();
         for(int i=0;i<str.length;i++)
             set.add(str[i]);
-        System.out.print(set);
+            Iterator itr = set.iterator();
+        while(itr.hasNext())
+            System.out.print(itr.next());
     }
 }
